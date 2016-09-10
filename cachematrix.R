@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## Implementation strategy : used the same as makeVector, but with slightly
 ## more explicit variable names
 
@@ -12,8 +9,8 @@ makeCacheMatrix <- function(x = matrix()) {
     cache <- NULL
     
     set <- function(y) {
-        m <<- y
-        message("Invalidating cached data")
+        x <<- y
+        message("New Matrix, invalidating cached data")
         cache <<- NULL
     }
     
